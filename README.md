@@ -16,8 +16,6 @@ GEOContrast packages a multi-species **R Shiny** workflow for GEO sample groupin
 
 ![Rotating 3D landscape of synthetic results; blue lower expression, coral higher expression, gray not passing display thresholds.](docs/assets/landscape.gif)
 
-*Animated preview of the website's synthetic explorer—not a screenshot of the R app or real experimental data. [Static alternative](docs/assets/landscape-still.png).*
-
 ## Explore the website
 
 ```sh
@@ -104,22 +102,6 @@ docs/assets/         3D explorer, original graphics and animation
 web-tests/           Node tests for demo mathematics and serving
 tools/               Local server and packaging tools
 ```
-
-## Publish and maintain
-
-The public repository is [WillcolsonRx/GEOContrast](https://github.com/WillcolsonRx/GEOContrast), and the [interactive website](https://willcolsonrx.github.io/GEOContrast/) is served from `docs/`. For GitHub Pages, select **Deploy from a branch → main → /docs** in repository Settings → Pages. Pages hosts the demonstration and documentation; deploy the R app separately on a Shiny-capable host. Set `appUrl` in `docs/assets/config.js` only after that service exists. Repository links are inferred on GitHub Pages or can be configured there.
-
-Suggested description: **Multi-species GEO differential expression in R Shiny, with limma, DESeq2, annotation recovery and an interactive 3D result demo.**
-
-Suggested topics: `bioinformatics`, `gene-expression`, `differential-expression`, `geo`, `r-shiny`, `limma`, `deseq2`, `rna-seq`, `microarray`, `data-visualization`.
-
-```sh
-npm test
-python tools/package_source.py
-node tools/build-preview.mjs
-```
-
-The Node tests check the website's mathematics, routing and HTTP delivery. They do not validate biological models. R execution, real-data analysis and visual browser QA remain to be performed in a configured environment. See [contribution guidance](CONTRIBUTING.md) and the [original source notes](docs/UPSTREAM_NOTES.md).
 
 ## License
 
