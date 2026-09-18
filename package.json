@@ -1,0 +1,14 @@
+{
+  "name": "geocontrast",
+  "version": "0.4.8",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node tools/serve.mjs",
+    "test": "node --test web-tests/*.test.cjs",
+    "build:preview": "python tools/package_source.py && node tools/build-preview.mjs"
+  }
+}

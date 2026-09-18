@@ -1,0 +1,17 @@
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+node_modules/
+.DS_Store
+cache/
+*.log
+
+# Generated offline preview stays local
+/GEOContrast-preview.html
+.env
+.env.*
+!.env.example
+*.pem
+__pycache__/
+Thumbs.db
